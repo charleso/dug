@@ -1,0 +1,33 @@
+name:
+  dug-issue-core
+version:
+  0.0.1
+license:
+  BSD3
+author:
+  Charles O'Farrell <charleso@charleso.org>
+maintainer:
+  Charles O'Farrell <charleso@charleso.org>
+copyright:
+  (c) 2018 Charles O'Farrell
+cabal-version:
+  >= 1.8
+build-type:
+  Simple
+description:
+  dug-issue-core
+
+
+library
+  build-depends:
+      base >= 3 && < 5
+    , dug-prelude
+
+  ghc-options:
+    -Wall
+
+  hs-source-dirs:
+    src
+
+  exposed-modules:
+    Dug.Prelude
