@@ -21,6 +21,7 @@ description:
 library
   build-depends:
       base                            >= 3          && < 5
+    , dug-issue-core
     , dug-prelude
 
   ghc-options:

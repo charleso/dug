@@ -30,4 +30,4 @@ library
     src
 
   exposed-modules:
-    Dug.Prelude
+    Dug.Issue.Data

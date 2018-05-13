@@ -21,6 +21,9 @@ description:
 library
   build-depends:
       base >= 3 && < 5
+    , text == 1.2.*
+    , transformers-bifunctors == 0.1.*
+    , transformers-either == 0.1.*
 
   ghc-options:
     -Wall

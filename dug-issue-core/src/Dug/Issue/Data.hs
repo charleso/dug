@@ -1,7 +1,9 @@
 {-# LANGUAGE NoImplicitPrelude #-}
 module Dug.Issue.Data (
-    Description (..)
+    Comment (..)
+  , Description (..)
   , Issue (..)
+  , IssueId (..)
   , Label (..)
   , Title (..)
   ) where
@@ -9,6 +11,11 @@ module Dug.Issue.Data (
 import           Dug.Prelude
 
 -- * Types
+
+data Comment =
+  Comment {
+      commentBody :: Text
+    } deriving (Eq, Show)
 
 newtype Description =
   Description {
@@ -20,6 +27,11 @@ data Issue =
       issueTitle :: Title
     , issueDescription :: Description
     , issueLabels :: [Label]
+    } deriving (Eq, Show)
+
+data IssueId =
+  IssueId {
+      renderIssueId :: Text
     } deriving (Eq, Show)
 
 newtype Label =
